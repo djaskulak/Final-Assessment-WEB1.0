@@ -2,66 +2,81 @@
 
 <html>
     <head>
+        <title></title>
 
+        <!--This is the link to the CSS file-->
+        <link rel='stylesheet' href='styles.css'>
     </head>
 
-    <title>
-
-    </title>
-
     <body>
-        <!--This section will be in a column on the left-->
-        <div id="left">
-            <!--This section with have the student info on the top left-->
-            <section id="student-info">
-                <!--My name-->
-                <h1>
-                    Danika Jaskulak-Gonzalez
-                </h1>
+        <section id="whole">
+            <!--This section will be in a column on the left-->
+            <div id="left">
+                <!--This section with have the student info on the top left-->
+                <section id="student-info">
+                    <!--My name-->
+                    <h1>
+                        Danika Jaskulak-Gonzalez
+                    </h1>
 
-                <!--Small blurb about me-->
-                <p>
-                    My favorite color is lavender and I wear Birks!
-                </p>
-            </section>
+                    <!--Small blurb about me-->
+                    <p>
+                        My favorite color is lavender and I wear Birks!
+                    </p>
+                </section>
 
-            <!--Section with the data input that will edit the page-->
-            <section id="data-input">
-                <!--This is the heading for the input section-->
-                <h1>
-                    Font Styler
-                </h1>
+                <!--Section with the data input that will edit the page-->
+                <section id="data-input">
+                    <!--This is the heading for the input section-->
+                    <h1>
+                        Font Styler
+                    </h1>
 
-                <!--This is all the input-->
-                <input id-"input-size" type="number">
-                <select id="select-font">
-                    <option>Helvetica</option>
-                    <option>Arial</option>
-                    <option>Times New Roman</option>
-                    <option>Geogia</option>
-                </select>
-                <input id="input-color" type="color" value="#000">
-                <input id="input=bg-color" type="color" value="#fff">
-                <textarea id="enter-text"></textarea>
-            </section>
-        </div>
+                    <!--This is all the input-->
+                    <label>Font Size</label>
+                    <input id-"input-size" type="number">
 
-        <!--This section will be in a column on the right-->
-        <div id="right">
-            <!--Section that will be altered with input on the left bottom section-->
-            <section id="headline-display">
-                <h1 id="display"></h1>
-            </section>
+                    <label>Font Family</label>
+                    <select id="select-font">
+                        <option>Helvetica</option>
+                        <option>Arial</option>
+                        <option>Times New Roman</option>
+                        <option>Geogia</option>
+                    </select>
 
-            <!--section that will show what the css looks like-->
-            <section is="data-output">
-                <pre><code>.headline {
-                    font-size: <span id="show-size"></span>px;
-                    font-family: <span id="show-font"></span>;
-                    color: <span id="show-color"></span>;
-                    background-color: <span id="show-bg-color"></span>;
-                }</code></pre>
-            </section>
-        </div>
+                    <label>Font Color</label>
+                    <input id="input-color" type="color" value="#000">
+
+                    <label>Background Color</label>
+                    <input id="input=bg-color" type="color" value="#fff">
+
+                    <label>Enter Text</label>
+                    <textarea id="enter-text"></textarea>
+                </section>
+            </div>
+
+            <!--This section will be in a column on the right-->
+            <div id="right">
+                <!--Section that will be altered with input on the left bottom section-->
+                <section id="headline-display">
+                    <h1 id="display">Sample Text</h1>
+                </section>
+
+                <!--section that will show what the css looks like-->
+                <section is="data-output">
+                    <h1>Font Settings</h1>
+                    <pre><code>.headline {
+                        font-size: <span id="show-size">16</span>px;
+                        font-family: <span id="show-font">Times</span>;
+                        color: <span id="show-color">#000</span>;
+                        background-color: <span id="show-bg-color">#fff</span>;
+                    }</code></pre>
+                </section>
+            </div>
+        </section>
+
+        <!--This is the link to the Javascript file-->
+        <script src='./resources/js/scripts.js' type="module">
+        </script>
     </body>
 </html>
